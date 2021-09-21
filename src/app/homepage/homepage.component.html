@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row">
+  <app-banner></app-banner>
+</div>
+
+  <div class="row">
+
+    <div class="col-md-4" *ngFor="let pic of pics">
+    <!-- CARD-->
+
+    <app-album-card caption="{{pic.caption}}" image="{{pic.image }}" id="{{pic.id}}"></app-album-card>
+    <!-- /CARD -->  
+    </div>
+  </div>
+  </div>

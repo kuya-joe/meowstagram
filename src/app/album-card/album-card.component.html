@@ -1,0 +1,11 @@
+<div class="card album-card">
+  <img class="card-img-top" [src]="_imageFullPath" alt="{{caption}}">
+  <div class="card-body">
+    <h5 class="card-title">Cat ID: {{id}}</h5>
+    <p class="card-text">
+      <span>{{caption}}</span>
+    </p>
+    <a href="#" class="btn btn-primary" (click)="onClickView(this.id)">View</a>
+    <a href="#" class="btn btn-secondary" (click)="onClickEdit(this.id)">Edit</a>
+  </div>
+</div>
